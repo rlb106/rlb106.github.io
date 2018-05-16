@@ -36,6 +36,7 @@ box-shadow: 5px 5px 2px 0px rgba(211,211,211,0.5);
 p {
     font-size: 14px;
     line-height: 1.75;
+    color: #404041;
 }
 
 p.large {
@@ -286,7 +287,7 @@ fieldset[disabled] .btn-xl.active {
 header {
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+    background-image: url(../img/header-bg2.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -378,9 +379,28 @@ section h3.section-subheading {
   margin: 20px auto;
   font-size: 2em;
 }
+
+.padded-multiline-white {
+  line-height: 2.25em;
+  padding: 2px 0;
+  width: auto;
+  margin: 20px auto;
+}
+
 .padded-multiline span { 
   background-color: rgba(254,209,54,.9);
   color: #fff;
+  display: inline;
+  padding: 0.45rem 1.45rem;
+  
+  /* Needs prefixing */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.padded-multiline-white span { 
+  background-color: rgba(255,255,255,.5);
+  color: #404041;
   display: inline;
   padding: 0.45rem 1.45rem;
   
@@ -473,6 +493,15 @@ section#contact {
 
 section#contact a {
     text-align: center;
+}
+
+section#contact form {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+section#contact button.btn {
+    margin-top: .5em;
 }
 
 footer {
